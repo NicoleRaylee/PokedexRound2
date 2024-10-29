@@ -89,6 +89,7 @@ body {
   width: 100px; /* Set a fixed size for images */
   height: 100px;
   margin-bottom: 10px; /* Space below the image */
+  
 }
 
 h1 {
@@ -113,5 +114,49 @@ h1 {
 }
 
 .move-card:hover {
+  background-color: #d4d4d4; /* Change color on hover */
+}
+
+.base-stats {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+}
+
+.base-stats:hover {
+  background-color: #d4d4d4; /* Change color on hover */
+}
+
+.Moves {
+  text-align: center;
+  margin-top: auto;
+}
+
+.HWT {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+}
+
+.HWT:hover {
+  background-color: #d4d4d4; /* Change color on hover */
+}
+
+.pokeSprite {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+}
+
+.pokeSprite:hover {
   background-color: #d4d4d4; /* Change color on hover */
 }

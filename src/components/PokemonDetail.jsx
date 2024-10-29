@@ -31,18 +31,23 @@ const PokemonDetail = () => {
         <div>
             <button onClick={() => navigate('/')}>Back to Pokedex</button>
             <h1>{pokemon.name}</h1>
+            <div className="pokeSprite">
             <img src={pokemon.sprites.front_default} alt={pokemon.name} />
             <img src={pokemon.sprites.front_shiny} alt={pokemon.name}/>
+            </div>
+            <div className='HWT'>
             <p>Height: {pokemon.height}</p>
             <p>Weight: {pokemon.weight}</p>
             <p>Types: {pokemon.types.map(type => type.type.name).join(', ')}</p>
+            </div>
+            
+            <div className='base-stats'>
             <h2>Base Stats</h2>
-            <ul>
                 {pokemon.stats.map(stat => (
-                    <li key={stat.stat.name}>{stat.stat.name}: {stat.base_stat}</li>
+                    <div key={stat.stat.name}>{stat.stat.name}: {stat.base_stat}</div>
                 ))}
-            </ul>
-            <h2>Moves</h2>
+            </div>
+            <header class='Moves'><h2>Moves</h2></header>
             <div className='move-list'>
                 {pokemon.moves.slice(0, 30).map(move => (
                     <div key={move.move.name} className="move-card">
